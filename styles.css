@@ -3,16 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  background-color:#ffdeeb;
+}
 header {
   width: 100%;
   height: 50px;
-  background-color: pink;
+  background-color: #ba1141;
   padding: 0 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  border-bottom:1px solid #8a0030;
 }
 
 .icon {
@@ -26,4 +29,42 @@ header {
 
 .nav {
   display: flex;
+  list-style-type:none;
+}
+.nav li a{
+  color:white;
+  padding:12px;
+  margin:0 10px;
+  text-decoration:none;
+  border:1px solid #8a0030;
+  border-bottom:2px solid #fff;
+  border-radius:10px;
+  transition: all 0.1s linear;
+}
+.nav li a:hover{
+  padding:10px;
+  margin: 0 12px;
+  background-color: #e31b54;
+}
+.introduction, .description{
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  padding: 0 250px;
+}
+.introduction h1{
+  font-size:40pt;
+}
+.introduction .logo img{
+  height:500px;
+}
+section.container{
+  padding:0 100px 100px 100px;
+}
+.title{
+  text-align:center;
+  line-height: 50px;
+}
+.description > div{
+  padding:0 75px;
 }
